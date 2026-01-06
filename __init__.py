@@ -1,4 +1,15 @@
-# envs/__init__.py
-from envs.ecogrid_env_v2 import make_env, EcoGridParallelEnvV2
+"""
+scripts package
 
-# This allows you to use: from envs import make_env
+Contains executable entry-point scripts for training, evaluation,
+and analysis. All scripts in this package are intended to be run as:
+
+    python -m scripts.<script_name>
+
+Example:
+    python -m scripts.train_ippo
+"""
+
+__all__ = [
+    "train_ippo",
+]
